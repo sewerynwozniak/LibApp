@@ -42,6 +42,7 @@ namespace LibApp.Controllers
         }
 
 
+        [Route("books/released/{year:regex(^\\d{{4}}$)}/{month:range(1,12)}")]
 
         public IActionResult ByReleaseDate(int year, int month)
         {

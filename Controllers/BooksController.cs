@@ -14,7 +14,10 @@ namespace LibApp.Controllers
         {
             var firstBook = new Book() { Name = "English dictionary" };
 
-            return View(firstBook);
+            ViewBag.Book = firstBook;
+            ViewData["Book"] = firstBook;
+
+            return View();
         }
 
 
